@@ -44,11 +44,19 @@ def handle_message(event):
         event.reply_token,
         TextSendMessage(text=event.message.text))'''
     
-    message=ImageSendMessage(
+    '''message=ImageSendMessage(
         original_content_url='https://i.imgur.com/pXM58cb.jpg',
         preview_image_url='https://i.imgur.com/pXM58cb.jpg'
     )
+    line_bot_api.reply_message(event.reply_token,message)'''
+    
+    message=StickerSendMessage(
+        package_id='1'
+        sticker_id='1'
+    )
     line_bot_api.reply_message(event.reply_token,message)
+    
+    
 
 
 if __name__ == "__main__":
