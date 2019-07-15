@@ -40,9 +40,9 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     # 回應使用者輸入的話
-    line_bot_api.reply_message(
+    '''line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=event.message.text))
+        TextSendMessage(text=event.message.text))'''
     
     message=ImageSendMessage(
         original_content_url='https://imgur.com/pXM58cb',
