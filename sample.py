@@ -48,7 +48,7 @@ def handle_message(event):
         original_content_url='https://imgur.com/pXM58cb',
         preview_image_url='https://imgur.com/pXM58cb'
     )
-    line_bot_api.reply_message(event.reply_tooken,message)
+    line_bot_api.reply_message(event.reply_token,message)
 
 
 if __name__ == "__main__":
